@@ -1,0 +1,25 @@
+ <view class="body">
+            <view class="item" >
+                <!-- 日期分类 -->
+                <view class="mark {{move==true?'fix':''}}">{{date}}</view>
+                <view class="posts large">
+                    <!-- 文章 -->
+                   <view class='posts-li' wx:for="{{response}}" bindtap='read' data-id='{{item.id}}'>
+                          <text href="javascript:;" class="tag" wx:if="{{item.column.name}}">{{item.column.name}}</text>
+                          <view class="cont" >
+                              <view class='post-title'>{{item.title}}</view>
+                              <view class="brief">
+                                  <view class="post2" wx:if="{{item.display_style == 10002}}">{{item.abstract}}</view>
+                                  <view class="post-p only" wx:if="{{item.display_style == 10001}}">{{item.abstract}}</view>
+                                  <view class="thumb" wx:if="{{item.display_style==10002}}">
+                                      <image src="{{item.thumbs[0].small.url}}"></image>
+                                  </view>
+                                  <view class="gallery" wx:if="{{item.display_style==10003}}">
+                                      <image src="{{item.thumbs[0].small.url}}"></image>
+                                  </view>
+                              </view>
+                          </view>
+                  </view>
+                </view>
+            </view>
+        </view>

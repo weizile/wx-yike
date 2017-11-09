@@ -1,0 +1,30 @@
+<!--pages/author/author.wxml-->
+<view class="body">
+			<view class="author" >
+				<view class='dt' wx:if="{{showin}}">本周推荐</view>
+          <view class='dd' wx:for="{{authorsCom}}" bindtap='center' data-id='{{item.id}}'>
+            <view class="a">
+              <view class="avatar">
+                <image src="{{item.avatar}}" alt=""></image>
+              </view>
+              <view class="info">
+                <view class="h5">{{item.name}}</view>
+                <view class="p">{{item.editor_notes}}</view>
+              </view>
+            </view>
+        </view>
+				<view class='dt' wx:if="{{showin}}" >热门作者</view>
+          <view class='dd' wx:for="{{authorsHotMore}}" bindtap='center' data-id='{{item.id}}'>
+            <view class="a">
+              <view class="avatar">
+                <image src="{{item.avatar}}" alt=""></image>
+              </view>
+              <view class="info">
+                <view class="h5">{{item.name}}</view>
+                <view class="p">{{item.editor_notes}}</view>
+              </view>
+            </view>
+          </view>
+      </view> 
+</view>
+

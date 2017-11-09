@@ -1,0 +1,30 @@
+<!--pages/center/center.wxml-->
+<view class="body">
+			<view class="center-title">
+				<image src="{{person.author.avatar}}" alt=""></image>
+				<view class='h5'>{{person.author.name}}</view>
+				<view class='p'>{{person.author.resume}}</view>
+				<view class='a' wx:if="{{show}}">去豆瓣主页</view>
+			</view>
+			<view class="item">
+				<view class="posts large">
+					<!-- 文章 -->
+           <view class='posts-li' wx:for="{{person.posts}}" bindtap='read' data-id='{{item.id}}'>
+					  <text href="javascript:;" class="tag" wx:if="{{item.column.name}}">{{item.column.name}}</text>
+                          <view class="cont" >
+                              <view class='post-title'>{{item.title}}</view>
+                              <view class="brief">
+                                  <view class="post2" wx:if="{{item.display_style == 10002}}">{{item.abstract}}</view>
+                                  <view class="post-p only" wx:if="{{item.display_style == 10001}}">{{item.abstract}}</view>
+                                  <view class="thumb" wx:if="{{item.display_style==10002}}">
+                                      <image src="{{item.thumbs[0].small.url}}"></image>
+                                  </view>
+                                  <view class="gallery" wx:if="{{item.display_style==10003}}">
+                                      <image src="{{item.thumbs[0].small.url}}"></image>
+                                  </view>
+                              </view>
+                          </view>
+					</view>
+				</view>
+			</view>
+      </view>

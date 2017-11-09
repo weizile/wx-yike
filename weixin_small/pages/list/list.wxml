@@ -1,0 +1,12 @@
+<!--pages/list/list.wxml-->
+<view class="body">
+			<view class="category">
+				<view class='li' wx:for="{{list}}">
+					<view class='a'>
+						<image src="{{item.icon}}"></image>
+						<view class='h5'>{{item.name}}</view>
+						<view class='p'>{{item.description}}</view>
+					</view>
+				</view>
+			</view>
+		</view>

@@ -1,0 +1,287 @@
+@import 'wxParse/wxParse.wxss';
+.body {
+  transition: all 0.5s 0.1s;
+}
+.body .mark {
+  width: 100%;
+  height: 93.75rpx;
+  line-height: 1;
+  padding-top: 30.47rpx;
+  padding-left: 32.8125rpx;
+  font-size: 32.8125rpx;
+  background-color: #FFF;
+  color: #c8c8c8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.body .mark.fix{
+  position: fixed;
+}
+.body .posts-title {
+  text-align: center;
+  line-height: 1;
+  padding: 35.15625rpx 0 28.125rpx;
+}
+.body .center-title {
+  text-align: center;
+  padding: 46.875rpx 0;
+}
+.body .center-title image {
+  width: 112.5rpx;
+  height: 112.5rpx;
+  margin: 0 auto;
+}
+.body .center-title .h5 {
+  line-height: 1.5;
+  margin: 23.4375rpx;
+  font-size: 37.5rpx;
+}
+.body .center-title .p {
+  line-height: 1.5;
+  padding: 0 37.5rpx;
+  font-size: 25.78125rpx;
+  color: #8f8f8f;
+}
+.body .center-title .a {
+  width: 5rem;
+  line-height: 1;
+  padding: 0.375rem 0;
+  margin: 1rem auto 0;
+  font-size: 0.6875rem;
+  color: #22bca7;
+  border: 1px solid #22bca7;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.body .posts .tag {
+  display: block;
+  width: 4.1875rem;
+  text-align: center;
+  line-height: 1;
+  padding: 0.375rem 0;
+  font-size: 0.75rem;
+  color: #e6e5e5;
+  background-color: #b9b9b9;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.body .posts .post-title {
+  font-size: 50rpx;
+   margin-bottom: 20rpx;  
+    line-height: 1.5;
+  color: #1a1a1a;
+}
+.body .posts .brief {
+  position: relative;
+}
+.body .posts .brief .post-p {
+  line-height: 1.75;
+  color: #7f7f7f;
+  font-size: 0.6875rem;
+  padding-right: 280rpx;
+}
+.body .posts .brief .post2 {
+  line-height: 1.75;
+  color: #7f7f7f;
+  font-size: 0.6875rem;
+  padding-right: 280rpx;
+}
+.body .posts .brief .post-p.only {
+  padding-right: 0;
+}
+.body .posts .thumb {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.body .posts .gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.body .posts .posts-li {
+  border-top: 2rpx solid #dadada;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.body .posts .gallery image {
+  width:650rpx;
+  height: 370rpx;
+}
+ .body .large .cont {
+  padding: 20rpx 0;
+} 
+.body .large .brief {
+  min-height: 110rpx;
+  font-size: 0.8125rem;
+}
+.body .large .thumb {
+  width: 280rpx;
+  height: 200rpx;
+}
+.body .large .thumb image {
+  width: 280rpx;
+  height: 200rpx;
+}
+.body .large .gallery {
+  height: 400rpx;
+  padding-top: 0.5625rem;
+  padding-right: 0.5625rem;
+   background-image:Url('images/gallery.png');
+  background-size: contain; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.body .author {
+  line-height: 1;
+}
+.body .author .dt {
+  padding: 0.875rem 0 0.875rem 1.25rem;
+  font-size: 1rem;
+  color: #9b9b9b;
+  border-bottom: 1px solid #dadada;
+}
+.body .author .dd {
+  overflow: hidden;
+  padding: 1.25rem 0 1.25rem 1.25rem;
+}
+.body .author .avatar {
+  width: 125rpx;
+  height: 125rpx;
+  float: left;
+  color: #000;
+}
+.body .author .avatar image {
+  width: 112.5rpx;
+  height: 112.5rpx;
+}
+.body .author .info {
+  height: 165rpx;
+  margin-left: 4.25rem;
+  border-bottom: 1px solid #dadada;
+  box-sizing: content-box;
+  color: #000;
+}
+.body .author .info .h5 {
+  height: 45rpx;
+  margin-bottom: 0.875rem;
+  font-size: 37.5rpx;
+}
+.body .author .info .p {
+  height: 80rpx;
+  font-size: 33rpx;
+  color: #5f5f5f;
+}
+.body .author .authorLoadMore {
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  background: Url("../images/loading.gif") no-repeat;
+  background-size: contain;
+}
+.body .category {
+  overflow: hidden;
+}
+.body .category .li {
+  width: 50%;
+  height: 6.5625rem;
+  text-align: center;
+  line-height: 1;
+  padding-top: 0.9375rem;
+  float: left;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.body .category .li:nth-child(2n) {
+  border-right: none;
+}
+.body .category .li image {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 0 auto;
+}
+.body .category .li .h5 {
+  height: 40rpx;
+  margin: 28.125rpx 0;
+  font-size: 32.8125rpx;
+  color: #0f9c89;
+}
+.body .category .li .p {
+  height: 30rpx;
+  font-size: 25.78125rpx;
+  color: #b1b1b1;
+}
+.body .old-note {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #c0c0cd;
+  padding-top: 3%;
+}
+.body .old-note .old-new {
+  width: 70%;
+  height: 60%;
+  display: block;
+  color: #fff;
+  background-color: #05ab94;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+}
+.body .post-content div:nth-of-type(2) .status-card {
+  margin: 1rem 0.5rem;
+  background-color: #e7eaee;
+}
+.body .post-content div:nth-of-type(2) .status-card .hd {
+  position: relative;
+}
+.body .post-content div:nth-of-type(2) .status-card .hd img {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+}
+.body .post-content div:nth-of-type(2) .status-card .hd a {
+  color: #0f9c89;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.body .post-content div:nth-of-type(2) .status-card .bd {
+  margin: 1rem 0.5rem;
+}
+.body .post-content div:nth-of-type(2) .status-card .bd p {
+  font-size: 0.8rem ;
+  padding-bottom: 0.8rem;
+}
+.body .post-content div:nth-of-type(2) .status-card .bd img {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.body .post-content div:nth-of-type(3) {
+  padding-bottom: 1.2rem;
+}
+.body .post-content div:nth-of-type(3) div:nth-of-type(1) {
+  border-top: 1px solid #e7eaee;
+}
+.body .post-content div:nth-of-type(3) .author-feed {
+  padding-left: 1rem;
+  color: gray;
+  font-size: 0.6rem;
+}
+.body .post-content div:nth-of-type(3) .author-feed .author-name {
+  color: #0f9c89;
+  font-size: 0.6rem;
+}
+.body .post-content div:nth-of-type(3) .column {
+  border-top: 1px solid #e7eaee;
+  border-bottom: 1px solid #e7eaee;
+  font-size: 0.6rem;
+  color: gray;
+  padding-left: 1rem;
+}
+.body .post-content div:nth-of-type(3) .url_box {
+  padding-left: 1rem;
+}
